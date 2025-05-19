@@ -4,41 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Tech Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; color: #333; }
     header, footer { background: #222; color: #fff; padding: 1rem 2rem; text-align: center; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     .container { padding: 2rem; }
     h1, h2, h3 { color: #2c3e50; }
-    .projects, .certificates, .services, .subscriptions { margin-bottom: 2rem; }
+    .projects, .certificates, .services, .subscriptions, .about, .contact { margin-bottom: 2rem; }
     .card { background: #fff; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
     ul { list-style-type: none; padding: 0; }
     li { margin: 0.5rem 0; }
     .price { font-weight: bold; color: #2980b9; }
+    .social-icons a { margin: 0 10px; text-decoration: none; display: inline-block; font-size: 1.5rem; color: #333; }
+    .chart { text-align: center; margin-top: 1rem; }
   </style>
 </head>
 <body>
   <header>
     <h1>My Tech Portfolio</h1>
-    <p>Projects | Services | Certifications</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#certificates">Certifications</a>
+      <a href="#subscriptions">Plans</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <div class="container">
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2>Featured Projects</h2>
       <div class="card">
-        <h3>JavaScript Project Showcase</h3>
+        <h3><i class="fas fa-code"></i> JavaScript Project Showcase</h3>
         <p>Multiple projects built with JavaScript showcasing DOM manipulation, API integration, and interactive features.</p>
       </div>
       <div class="card">
-        <h3>IT Support System</h3>
+        <h3><i class="fas fa-tools"></i> IT Support System</h3>
         <p>Developed an internal ticketing and issue-tracking system for IT support with automated escalation features.</p>
       </div>
       <div class="card">
-        <h3>UI/UX Design Projects</h3>
+        <h3><i class="fas fa-pencil-ruler"></i> UI/UX Design Projects</h3>
         <p>Participated as a UI/UX designer in two large-scale applications, focusing on usability and responsive design.</p>
       </div>
       <div class="card">
-        <h3>Additional Project Highlights</h3>
+        <h3><i class="fas fa-project-diagram"></i> Additional Project Highlights</h3>
         <ul>
           <li><strong>Geo Agriculture:</strong> A platform to map and analyze farming zones for improved agricultural output.</li>
           <li><strong>Health-Care System:</strong> Patient record management system with appointment scheduling.</li>
@@ -49,8 +60,8 @@
       </div>
     </section>
 
-    <section class="certificates">
-      <h2>Certifications</h2>
+    <section id="certificates" class="certificates">
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
       <ul>
         <li>JavaScript Fundamentals - Certified</li>
         <li>Frontend Development Certificate - Completed</li>
@@ -58,8 +69,8 @@
       </ul>
     </section>
 
-    <section class="services">
-      <h2>Our Services</h2>
+    <section id="services" class="services">
+      <h2><i class="fas fa-concierge-bell"></i> Our Services</h2>
       <ul>
         <li>Website Maintenance</li>
         <li>Web Design</li>
@@ -67,8 +78,8 @@
       </ul>
     </section>
 
-    <section class="subscriptions">
-      <h2>Subscription Plans</h2>
+    <section id="subscriptions" class="subscriptions">
+      <h2><i class="fas fa-gem"></i> Subscription Plans</h2>
       <div class="card">
         <h3>Basic</h3>
         <p class="price">$29</p>
@@ -83,6 +94,29 @@
         <h3>Diamond</h3>
         <p class="price">$50</p>
         <p>All Bronze features plus 2-year grant for all services and 6-month training in web design.</p>
+      </div>
+      <div class="chart">
+        <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['Basic','Bronze','Diamond'],datasets:[{label:'Plan Price',data:[29,35,50]}]}}" alt="Subscription Price Chart">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <div class="card">
+        <p><strong>IT Support professional</strong> (4+ years) in technical support, maintenance, troubleshooting. 1+ year coding/debugging. Experience reflects 60% client satisfaction, with a focus on enhancing service through technical proficiency in issue resolution, system administration, and script-based solutions. Aims to improve infrastructure and user support metrics.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <div class="card">
+        <p>You can reach us on all major social media platforms under the name <strong>7pillar-wire network</strong>.</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/7pillar-wire-network" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/7pillar-wire-network" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/7pillar-wire-network" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/company/7pillar-wire-network" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
     </section>
   </div>
